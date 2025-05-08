@@ -1,0 +1,343 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Right-side styles */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-side img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    section {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        position: sticky;
+        
+    }
+
+    .menu-icon {
+        display: block; /* Ensure the menu icon is visible on smaller screens */
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default on smaller screens */
+        flex-direction: column;
+        gap: 15px;
+        background-color: #e7fdf6;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex; /* Show the menu when the 'active' class is added */
+    }
+
+    .right-side {
+        margin-top: 10px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.menu-icon {
+    display: none; /* Hide the menu icon by default on larger screens */
+}
+
+
+
+body {
+    padding-top: 70px;
+ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+}
+
+/* Navbar */
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 75px;
+    height: auto;
+    
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #127a58 !important;
+    transform: translateY(-2px);
+}
+
+/* Search Bar */
+.search-form {
+    position: relative;
+    margin-right: 15px;
+}
+
+.search-input {
+    border-radius: 20px;
+    padding-left: 40px;
+    width: 220px;
+    border: 1px solid var(--gray);
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: var(--primary-dark);
+}
+
+/* Buttons */
+.auth-buttons .btn {
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.login-btn {
+    border: 1px solid #ff7f50;
+    color: #ff7f50;
+}
+
+.login-btn:hover {
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.signup-btn {
+    background-color: #127a58;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: white;
+    color: #127a58;
+    border: 1px solid #127a58;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #e7fdf6 !important; /* Very light green background */
+    color: #127a58; /* Matching text color */
+    margin-bottom: 40px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Hero Section Buttons */
+.hero-section .btn {
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.hero-section .btn-light {
+    background-color: #127a58; /* Matching green button */
+    color: white;
+    border: none;
+}
+
+.hero-section .btn-light:hover {
+    background-color: #0f4432; /* Darker green on hover */
+    color: white;
+}
+
+.hero-section .btn-outline-light {
+    border: 1px solid #127a58; /* Matching green border */
+    color: #127a58;
+    background-color: transparent;
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: #127a58; /* Green background on hover */
+    color: white;
+}
+
+/* Main Content */
+.hero-section {
+    
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 40px;
+    border-radius: 0 0 20px 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 25px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .category-badge {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color:#0f4432 ;
+    color: white;
+    padding: 60px 0 0;
+    margin-top: 80px;
+}
+
+.footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-heading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+    list-style: none;
+    margin-left: -25px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s;
+    
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.newsletter-input {
+    border-radius: 20px 0 0 20px !important;
+    border: none;
+    padding-left: 20px;
+}
+
+.newsletter-btn {
+    border-radius: 0 20px 20px 0 !important;
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 500;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--primary-dark);
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    
+    .search-form {
+        margin: 15px 0;
+        width: 100%;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .auth-buttons {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero_image img{
+        width: 250px;
+        padding: 40px 0;
+    }
+}
